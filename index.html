@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    To-do-list
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name">
+        <button>Add Todo</button>
+    </form>
+    <form action="{{ url_for('hello') }}" method="post">
+        <button>Complete all all</button>
+    </form>
+
+{% endblock %}
